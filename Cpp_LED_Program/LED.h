@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 #include <vector>
+#include <map>
 
 class LED {
 public:
@@ -26,6 +27,7 @@ public:
 private:
     std::ofstream device_file_;
     std::vector<std::string> binary_state_;
+    std::map<int, std::string> binary_map_;
     //variable for LED State
 };
 
